@@ -2,7 +2,7 @@
 " > System Settings
 "=====================
 
-let g:python_host_prog = '/usr/local/Cellar/python/2.7.11/bin/python2.7' 
+let g:python_host_prog = '/usr/bin/python' 
 
 "=====================
 " > Interface
@@ -14,12 +14,12 @@ syntax on
 let g:hybrid_use_Xresources=1
 set background=dark
 set guifont=Hack:h11
-colorscheme hybrid
+colorscheme seti
 let g:airline_powerline_fonts = 1
 
 " indentLine
 let g:indentLine_char = '┊'
-let g:indentLine_leadingSpaceChar = '.'
+let g:indentLine_leadingSpaceChar = 'ˑ'
 let g:indentLine_leadingSpaceEnabled  = 1
 
 " 80char limit
@@ -62,7 +62,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
@@ -70,6 +70,8 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'nvie/vim-flake8'
 
 call vundle#end()
 filetype plugin indent on
