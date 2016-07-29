@@ -3,6 +3,7 @@
 "=====================
 
 let g:python_host_prog = '/usr/bin/python' 
+let python_highlight_all = 1
 
 "=====================
 " > Interface
@@ -62,7 +63,6 @@ Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
-"Plugin 'valloric/youcompleteme'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
 Plugin 'fatih/vim-go'
@@ -72,6 +72,7 @@ Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'nvie/vim-flake8'
+Plugin 'hdima/python-syntax'
 
 call vundle#end()
 filetype plugin indent on
