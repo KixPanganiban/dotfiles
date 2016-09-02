@@ -1,6 +1,13 @@
 # KixPanganiban's Dotfiles
+- This installs/uses neovim, with dein as package manager
+- This also uses tmux with tpm as package manager
 
-I'm putting them here on GitHub so I don't easily lose them in the future. :P
+## Requirements
+- ruby (to install homebrew if it's not installed)
+- git
 
-- .nvimrc **symlinked** to ~/.vimrc (for use with classic vim and neovim)
-- .tmux.conf
+## To Install
+```bash
+$ git clone git@github.com:kixpanganiban/dotfiles ~/.dotfiles
+$ cd .dotfiles; ./install.sh
+```
