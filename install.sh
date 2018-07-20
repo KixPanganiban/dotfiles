@@ -8,7 +8,7 @@ else
     echo "vim is not installed! installing..."
     sudo apt install vim -y
 fi
-ln -s .vimrc ~/.vimrc
+ln -s $(pwd)/.vimrc ~/.vimrc
 mkdir -p ~/.vim/autoload
 
 # setup vim-plug
@@ -24,7 +24,7 @@ else
     echo "tmux is not installed! installing..."
     sudo apt install tmux -y
 fi
-ln -s .tmux.conf ~/.tmux.conf
+ln -s $(pwd)/.tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "tpm for tmux installed! Please run tmux and press Ctrl+A+I"
 
