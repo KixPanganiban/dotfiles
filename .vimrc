@@ -1,11 +1,9 @@
 scriptencoding utf-8
 set encoding=utf-8
+
 " Set plugins
 call plug#begin('~/.vim/plugged')
-	if has('nvim')
-		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-		Plug 'zchee/deoplete-jedi'
-	endif
+	Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 	Plug 'davidhalter/jedi-vim'
 	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'scrooloose/nerdtree'
@@ -14,16 +12,11 @@ call plug#begin('~/.vim/plugged')
 	Plug 'wincent/terminus'
 	Plug 'rafi/awesome-vim-colorschemes'
 	Plug 'tmhedberg/SimpylFold'
-	Plug 'vim-syntastic/syntastic'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'plytophogy/vim-virtualenv'
 	Plug 'zivyangll/git-blame.vim'
 call plug#end()
-if has('nvim')
-	let g:deoplete#enable_at_startup = 1
-	let g:jedi#completions_enabled = 0
-endif
 
 " Set ui tweaks
 colorscheme hybrid_material
@@ -39,7 +32,6 @@ set fillchars+=vert:\ￜ
 let mapleader = ","
 
 " Set python-specific tweaks
-let g:syntastic_python_checkers = ['pycodestyle']
 let g:SimpylFold_docstring_preview = 1
 let g:SimpylFold_fold_import = 0
 
