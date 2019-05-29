@@ -35,6 +35,10 @@ autocmd FileType python setlocal tabstop=8 softtabstop=0 expandtab shiftwidth=4 
 
 " Set keybindings
 let mapleader = ","
+map <F5> :NERDTreeToggle<CR>
+map <F6> :Gstatus<CR>
+map <F7> :Gcommit<CR>
+map <F8> :Gpush<CR>
 
 " Set python-specific tweaks
 let g:SimpylFold_docstring_preview = 1
