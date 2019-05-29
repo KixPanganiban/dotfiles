@@ -16,6 +16,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'plytophogy/vim-virtualenv'
 	Plug 'zivyangll/git-blame.vim'
+	Plug 'fatih/vim-go'
 call plug#end()
 
 " Set ui tweaks
@@ -30,8 +31,14 @@ set fillchars+=vert:\ￜ
 
 " Set keybindings
 let mapleader = ","
+map <F5> :NERDTreeToggle<CR>
+map <F6> :Gstatus<CR>
+map <F7> :Gcommit<CR>
+map <F8> :Gpush<CR>
 
 " Set python-specific tweaks
 let g:SimpylFold_docstring_preview = 1
 let g:SimpylFold_fold_import = 0
 
+" Set go-specific tweaks
+let g:go_metalinter_autosave = 1
